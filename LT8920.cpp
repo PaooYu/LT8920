@@ -302,7 +302,7 @@ int LT8920::read(uint8_t *buffer, size_t maxBuffer)
         return -2;
     }
 
-    uint8_t pos;
+    uint8_t pos = 0;
     buffer[pos++] = (data & 0xFF);
     while (pos < packetSize)
     {
